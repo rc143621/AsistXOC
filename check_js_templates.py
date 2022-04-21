@@ -66,10 +66,6 @@ def check_prohibited_tags(data):
 
     err_count = 0
 
-    has_trans = False
-
-    for idx, line in enumerate(data):
-
         for tag in re.findall(pattern, line):
 
             if tag not in allowed_tags:
